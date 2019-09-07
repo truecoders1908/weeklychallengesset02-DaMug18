@@ -8,7 +8,10 @@ namespace weeklyChallenges02
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            foreach (var element in lowercasealphabet)
+            {
+
+            }
         }
 
         public bool CountOfElementsIsEven(string[] vals)
@@ -82,12 +85,28 @@ namespace weeklyChallenges02
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+            if (numbers == null)
+            { return false; }
+            else
+            {
+                int isOdd = numbers.Sum();
+                if (isOdd % 2 == 0)
+                { return false; }
+                else
+                { return true; }
+            }
+
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            if (number <= 0)
+            { return 0; }
+            else
+            {
+                long divided = number / 2;
+                return divided;
+            }
         }
     }
 }
