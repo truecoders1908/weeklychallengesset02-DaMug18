@@ -8,10 +8,9 @@ namespace weeklyChallenges02
     {
         public bool CharacterIsALetter(char c)
         {
-            foreach (var element in lowercasealphabet)
-            {
-
-            }
+            return Char.IsLetter(c);
+         
+            
         }
 
         public bool CountOfElementsIsEven(string[] vals)
@@ -48,7 +47,14 @@ namespace weeklyChallenges02
             {
                 return 0;
             }
-            { return numbers.Max() + numbers.Min(); }
+            else if (numbers.Count() == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return numbers.Max() + numbers.Min();
+            }
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
